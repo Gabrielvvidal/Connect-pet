@@ -1,25 +1,40 @@
+import * as React from 'react'
 import { Text, View , StyleSheet } from "react-native";
+import { SafeAreaView } from 'react-native-safe-area-context';
 
 export default function Inicio() {
   return(
-    <View style={styles.container}>
-      <View style={styles.header}>
-        <Text style={styles.headerText}>Teste</Text>
+    <SafeAreaView style={styles.container}>
+      <View style={styles.headerBackground}>
       </View>
-    </View>
+      <View style={styles.headerElipse}/>
+    </SafeAreaView>
   )
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    flexDirection: 'column',
     backgroundColor: '#ffffff'
   },
 
-  header: {
-    marginTop: 50,
-    marginHorizontal: 10 
+  headerBackground: {
+    height: 120,
+    backgroundColor: '#009BFF',
+    zIndex: 10,
+    flexDirection: 'row'
+  },
+
+  headerElipse: {
+    borderRadius: 50,
+    backgroundColor: '#009bff',
+    width: 100,
+    height: 100,
+    transform: [{ scaleX: 7 }],
+    alignSelf: 'center',
+    marginTop: -63,
+    borderWidth: 10,
+    borderColor: '#00D1FF'
   },
 
   headerText: {
@@ -27,6 +42,6 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     color: '#333',
     textAlign: 'center',
-    marginTop: 35
-  }
+    paddingTop: 30
+  },
 })
