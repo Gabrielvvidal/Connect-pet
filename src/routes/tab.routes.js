@@ -15,11 +15,11 @@ export default function TabRoutes() {
       tabBarStyle: {
         backgroundColor: '#ffffff',
         borderTopWidth: 0,
-        shadowColor:'transparent',
         paddingBottom: 6.5,
         paddingTop: 6.5,
-        height: 70,
-        columnGap: 35
+        paddingLeft: 30,
+        paddingRight: 30,
+        height: 70
       },
       tabBarLabelStyle: {
         fontSize: 12,
