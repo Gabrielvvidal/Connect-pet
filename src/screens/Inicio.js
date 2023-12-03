@@ -6,7 +6,7 @@ import HeaderInicio from '../components/HeaderInicio';
 export default function Inicio() {
   return(
     <SafeAreaView style={styles.container}>
-      <HeaderInicio />
+      <HeaderInicio/>
     </SafeAreaView>
   )
 }
