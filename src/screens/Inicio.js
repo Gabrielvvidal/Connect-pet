@@ -3,12 +3,14 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 
 import HeaderInicio from '../components/HeaderInicio';
 import FiltroLoja from "../components/FiltroLojas";
+import FiltrosOrdem from "../components/FiltrosOrdem";
 
 export default function Inicio() {
   return(
     <SafeAreaView style={styles.container}>
       <HeaderInicio/>
       <FiltroLoja/>
+      <FiltrosOrdem/>
     </SafeAreaView>
   )
 }

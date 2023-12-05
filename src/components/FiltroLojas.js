@@ -4,7 +4,7 @@ import { Text, View, StyleSheet, Image, Pressable } from "react-native"
 export default function FiltroLoja() {
   return(
     <View style={styles.filtroContainer}>
-      <Pressable style={styles.filterBtn}>
+      <Pressable>
         <Image
           style={styles.filterImage} 
           source={require('../images/petshop.png')}
@@ -13,7 +13,7 @@ export default function FiltroLoja() {
         <Text style={styles.filterText}>Petshops</Text>
       </Pressable>
 
-      <Pressable style={styles.filterBtn}>
+      <Pressable>
         <Image 
           style={styles.filterImage} 
           source={require('../images/veterinaria.png')}
@@ -22,7 +22,7 @@ export default function FiltroLoja() {
         <Text style={styles.filterText}>Veterinárias</Text>
       </Pressable>
 
-      <Pressable style={styles.filterBtn}>
+      <Pressable>
         <Image
           style={styles.filterImage}  
           source={require('../images/cuidadores.png')}
@@ -31,7 +31,7 @@ export default function FiltroLoja() {
         <Text style={styles.filterText}>Cuidadores</Text>
       </Pressable>
 
-      <Pressable style={styles.filterBtn}>
+      <Pressable>
         <Image
           style={styles.filterImage}  
           source={require('../images/hoteis.png')}
@@ -53,7 +53,7 @@ const styles = StyleSheet.create({
     gap: 25,
     shadowColor: '#000',
     shadowOffset: { width: 1, height: 1 },
-    shadowOpacity:  0.4,
+    shadowOpacity:  0.25,
     shadowRadius: 3,
     elevation: 5,
     overflow: 'hidden',
