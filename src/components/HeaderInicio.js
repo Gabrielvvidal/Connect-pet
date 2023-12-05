@@ -94,6 +94,7 @@ const styles = StyleSheet.create({
     height: 30,
     fontSize: 16,
     paddingLeft: 5,
+    paddingRight: 10
   },
 
   rowCorrection: {
