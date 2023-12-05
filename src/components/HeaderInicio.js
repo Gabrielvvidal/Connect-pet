@@ -64,7 +64,8 @@ const styles = StyleSheet.create({
     alignSelf: 'center',
     marginTop: -63,
     borderWidth: 10,
-    borderColor: '#00D1FF'
+    borderColor: '#00D1FF',
+    zIndex: 9
   },
 
   Btn: {
@@ -109,7 +110,7 @@ const styles = StyleSheet.create({
   },
 
   addressText: {
-    fontSize: 15,
+    fontSize: 14,
     color: '#ffffff'
   }
 })

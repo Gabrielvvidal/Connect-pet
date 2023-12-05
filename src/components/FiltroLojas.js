@@ -45,12 +45,20 @@ export default function FiltroLoja() {
 
 const styles = StyleSheet.create({
   filtroContainer: {
-    height: 120,
+    height: 150,
     backgroundColor: '#ffffff',
     justifyContent: 'center',
     alignItems: 'center',
     flexDirection: 'row',
-    gap: 25
+    gap: 25,
+    shadowColor: '#000',
+    shadowOffset: { width: 1, height: 1 },
+    shadowOpacity:  0.4,
+    shadowRadius: 3,
+    elevation: 5,
+    overflow: 'hidden',
+    marginTop: -20,
+    paddingTop: 20
   },
 
   filterImage: {
