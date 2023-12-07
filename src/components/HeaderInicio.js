@@ -94,6 +94,7 @@ const styles = StyleSheet.create({
     width: 190,
     height: 30,
     fontSize: 16,
+    fontFamily: 'Inter_400Regular',
     paddingLeft: 5,
     paddingRight: 10
   },
@@ -111,6 +112,7 @@ const styles = StyleSheet.create({
 
   addressText: {
     fontSize: 14,
+    fontFamily: 'Inter_400Regular',
     color: '#ffffff'
   }
 })

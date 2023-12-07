@@ -45,32 +45,33 @@ export default function FiltroLoja() {
 
 const styles = StyleSheet.create({
   filtroContainer: {
-    height: 150,
+    height: 135,
     backgroundColor: '#ffffff',
     justifyContent: 'center',
     alignItems: 'center',
     flexDirection: 'row',
-    gap: 25,
-    shadowColor: '#000',
+    shadowColor: '#000000',
     shadowOffset: { width: 1, height: 1 },
-    shadowOpacity:  0.25,
+    shadowOpacity:  0.5,
     shadowRadius: 3,
-    elevation: 5,
+    elevation: 4,
     overflow: 'hidden',
     marginTop: -20,
-    paddingTop: 20
+    paddingTop: 20,
+    gap: 20
   },
 
   filterImage: {
     width: 60,
     height: 60,
     borderRadius: 20,
+    marginBottom: 5,
     alignSelf: 'center'
   },
 
   filterText: {
     fontSize: 12,
-    fontWeight: '700',
+    fontFamily: 'Inter_700Bold',
     textAlign: 'center'
   }
 })

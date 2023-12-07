@@ -23,6 +23,7 @@ export default function TabRoutes() {
       },
       tabBarLabelStyle: {
         fontSize: 12,
+        fontFamily: 'Inter_400Regular'
       },
       tabBarActiveTintColor: '#009bff',
       tabBarInactiveTintColor: '#000000'

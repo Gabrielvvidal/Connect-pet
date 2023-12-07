@@ -34,8 +34,8 @@ const styles = StyleSheet.create({
   ordemContainer: {
     flexDirection: 'row',
     paddingLeft: 20,
-    paddingTop: 15,
-    paddingBottom: 15
+    paddingTop: 10,
+    paddingBottom: 10
   },
 
   ordemBtn: {
@@ -50,7 +50,8 @@ const styles = StyleSheet.create({
   },
   
   ordemText: {
-    fontSize: 13,
+    fontSize: 12,
+    fontFamily: 'Inter_400Regular',
     alignSelf: 'center'
   }
 })
