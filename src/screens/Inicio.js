@@ -4,6 +4,7 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import HeaderInicio from '../components/HeaderInicio';
 import FiltroLoja from "../components/FiltroLojas";
 import FiltrosOrdem from "../components/FiltrosOrdem";
+import Recomendacoes from "../components/Recomendacoes";
 
 export default function Inicio() {
   return(
@@ -11,6 +12,7 @@ export default function Inicio() {
       <HeaderInicio/>
       <FiltroLoja/>
       <FiltrosOrdem/>
+      <Recomendacoes/>
     </SafeAreaView>
   )
 }
