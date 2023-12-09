@@ -1,6 +1,7 @@
 import { DrawerContentScrollView, DrawerItemList} from '@react-navigation/drawer';
 import { View, Text, SafeAreaView, StyleSheet, Pressable } from 'react-native'
-import { Feather } from '@expo/vector-icons';
+
+import UserIcon from "../../assets/svg/unknowUser.svg"
 
 export default function CustomDrawerContent(props){
   return(
@@ -8,7 +9,7 @@ export default function CustomDrawerContent(props){
       <DrawerContentScrollView {...props}>
         <View style={styles.headerBackground}>
           <View style={styles.avatarImg}>
-            <Feather name="user" size={40} color="#000000" />
+            <UserIcon />
           </View>
 
           <View>

@@ -1,11 +1,14 @@
 import { createDrawerNavigator } from "@react-navigation/drawer";
-import { Feather } from '@expo/vector-icons';
 
 import TabRoutes from "./tab.routes";
 
 import FormasLogin from "../screens/FormasLogin";
 import CustomDrawerContent from "../components/CustomDrawerContent";
 import Inicio from "../screens/Inicio";
+
+import EntrarIcon from "../../assets/svg/entrarIcon.svg"
+import AjudaIcon from "../../assets/svg/ajuda.svg"
+import SobreIcon from "../../assets/svg/sobre.svg"
 
 const Drawer = createDrawerNavigator()
 
@@ -39,7 +42,7 @@ export default function DrawerRoutes(){
         component={FormasLogin}
         options={{
           drawerLabel: 'Entrar',
-          drawerIcon: () => <Feather name="user-plus" size={28} color="black" style={{marginLeft: 12}}/>,
+          drawerIcon: () => <EntrarIcon style={{marginLeft: 6}}/>,
           drawerItemStyle: {
             borderBottomColor: "#CFCFCF",
             borderBottomWidth: 1,
@@ -55,7 +58,7 @@ export default function DrawerRoutes(){
         component={Inicio}
         options={{
           drawerLabel: 'Ajuda',
-          drawerIcon: () => <Feather name="help-circle" size={28} color="black" style={{marginLeft: 9}}/>,
+          drawerIcon: () => <AjudaIcon style={{marginLeft: 5}}/>,
           drawerItemStyle: {
             marginTop: -5,
             borderRadius: 0,
@@ -70,7 +73,7 @@ export default function DrawerRoutes(){
         component={Inicio}
         options={{
           drawerLabel: 'Sobre',
-          drawerIcon: () => <Feather name="info" size={28} color="black" style={{marginLeft: 9}}/>,
+          drawerIcon: () => <SobreIcon style={{marginLeft: 5}}/>,
           drawerItemStyle: {
             marginTop: -15,
             borderRadius: 0,

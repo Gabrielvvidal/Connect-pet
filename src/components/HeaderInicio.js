@@ -1,8 +1,10 @@
 import { Text, View, Pressable, TextInput, StyleSheet } from "react-native";
 import { useNavigation } from '@react-navigation/native';
-import { Feather } from '@expo/vector-icons';
-import { Ionicons } from '@expo/vector-icons';
 import { MaterialIcons } from '@expo/vector-icons';
+
+import MenuIcon from "../../assets/svg/menu.svg"
+import CarrinhoIcon from "../../assets/svg/carrinho.svg"
+import LupaIcon from "../../assets/svg/lupa.svg"
 
 export default function HeaderInicio() {
   const navigation = useNavigation()
@@ -15,11 +17,11 @@ export default function HeaderInicio() {
             style={styles.Btn}
             onPress={() => navigation.openDrawer()}
           >
-            <Feather name="menu" size={32} color="black" />
+            <MenuIcon />
           </Pressable>
 
           <View style={styles.searchContainer}>
-            <Feather name="search" size={25} color="black" />
+            <LupaIcon />
             <TextInput
               style={styles.searchInput}
               placeholder="Pesquise..."
@@ -30,7 +32,7 @@ export default function HeaderInicio() {
           <Pressable 
             style={styles.Btn}
           >
-            <Ionicons name="cart-outline" size={32} color="black" />
+            <CarrinhoIcon />
           </Pressable>
         </View>
 

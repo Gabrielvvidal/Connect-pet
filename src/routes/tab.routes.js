@@ -4,7 +4,15 @@ import Pedidos from "../screens/Pedidos"
 import Favoritos from "../screens/Favoritos"
 import Perfil from "../screens/Perfil"
 
-import { Feather } from '@expo/vector-icons';
+import InicioIcon from "../../assets/svg/inicio.svg"
+import PedidosIcon from "../../assets/svg/pedidos.svg"
+import FavoritosIcon from "../../assets/svg/favoritos.svg"
+import PerfilIcon from "../../assets/svg/perfil.svg"
+
+import InicioBlueIcon from "../../assets/svg/inicioBlue.svg"
+import PedidosBlueIcon from "../../assets/svg/pedidosBlue.svg"
+import FavoritosBlueIcon from "../../assets/svg/favoritosBlue.svg"
+import PerfilBlueIcon from "../../assets/svg/perfilBlue.svg"
 
 const Tab = createBottomTabNavigator();
 
@@ -33,7 +41,7 @@ export default function TabRoutes() {
         component={Inicio}
         options={{
           tabBarIcon: ({focused}) => {
-            return <Feather name="home" size={24} color={focused ? "#009bff" : "#000000"} />
+            return focused ? <InicioBlueIcon /> : <InicioIcon />
           }
         }}
       />
@@ -43,7 +51,7 @@ export default function TabRoutes() {
         component={Pedidos}
         options={{
           tabBarIcon: ({focused}) => {
-            return <Feather name="shopping-bag" size={24} color={focused ? "#009bff" : "#000000"} />
+            return focused ? <PedidosBlueIcon /> : <PedidosIcon />
           }
         }}
       />
@@ -53,7 +61,7 @@ export default function TabRoutes() {
         component={Favoritos}
         options={{
           tabBarIcon: ({focused}) => {
-            return <Feather name="heart" size={24} color={focused ? "#009bff" : "#000000"} />
+            return focused ? <FavoritosBlueIcon /> : <FavoritosIcon />
           }
         }}
       />
@@ -63,7 +71,7 @@ export default function TabRoutes() {
         component={Perfil}
         options={{
           tabBarIcon: ({focused}) => {
-            return <Feather name="user" size={24} color={focused ? "#009bff" : "#000000"} />
+            return focused ? <PerfilBlueIcon /> : <PerfilIcon />
           }
         }}
       />
