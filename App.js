@@ -4,7 +4,7 @@ import { StatusBar } from "react-native";
 import { 
   useFonts, 
   Inter_400Regular, 
-  Inter_500Medium, 
+  Inter_600SemiBold, 
   Inter_700Bold
 } from '@expo-google-fonts/inter'
 import * as SplashScreen from 'expo-splash-screen';
@@ -16,7 +16,7 @@ SplashScreen.preventAutoHideAsync();
 export default function App() {
   const [fontsLoaded, fontError] = useFonts({
     Inter_400Regular,
-    Inter_500Medium,
+    Inter_600SemiBold,
     Inter_700Bold
   })
 
