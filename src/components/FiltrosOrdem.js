@@ -46,7 +46,13 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     borderRadius: 10,
-    marginRight: 10
+    marginRight: 10,
+    shadowColor: '#000000',
+    shadowOffset: { width: 1, height: 1 },
+    shadowOpacity: 0.25,
+    shadowRadius: 1,
+    elevation: 2,
+    zIndex: 99
   },
   
   ordemText: {
