@@ -1,7 +1,7 @@
-import { Text } from "react-native";
+import EmDesenvolvimento from "../components/EmDesenvolvimento";
 
 export default function Favoritos() {
   return(
-    <Text>Teste</Text>
+    <EmDesenvolvimento/>
   )
 }
