@@ -34,7 +34,8 @@ export default function TabRoutes() {
         fontFamily: 'Inter_400Regular'
       },
       tabBarActiveTintColor: '#009bff',
-      tabBarInactiveTintColor: '#000000'
+      tabBarInactiveTintColor: '#000000',
+      tabBarHideOnKeyboard: true
     }}>
       <Tab.Screen 
         name="Início" 
