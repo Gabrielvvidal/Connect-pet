@@ -5,7 +5,7 @@ import { useFilterContext } from "../hooks/useFilterContext";
 import HeaderInicio from '../components/HeaderInicio';
 import FiltroLojas from "../components/FiltroLojas";
 import FiltrosOrdem from "../components/FiltrosOrdem";
-import CategoriaLojas from "../components/CategoriaLojas";
+import ExibirLojas from "../components/ExibirLojas";
 
 export default function Inicio() {
   const { categoria } = useFilterContext()
@@ -16,13 +16,13 @@ export default function Inicio() {
       <FiltroLojas/>
       <FiltrosOrdem/>
       
-      {categoria === "petshop" && <CategoriaLojas tituloCat="Petshops"/>}
+      {categoria === "petshop" && <ExibirLojas tituloCat="Petshops"/>}
 
-      {categoria === "veterinaria" && <CategoriaLojas tituloCat="Veterinárias"/>}
+      {categoria === "veterinaria" && <ExibirLojas tituloCat="Veterinárias"/>}
 
-      {categoria === "cuidadores" && <CategoriaLojas tituloCat="Cuidadores"/>}
+      {categoria === "cuidadores" && <ExibirLojas tituloCat="Cuidadores"/>}
 
-      {categoria === "hoteis" && <CategoriaLojas tituloCat="Hotéis"/>}
+      {categoria === "hoteis" && <ExibirLojas tituloCat="Hotéis"/>}
 
     </SafeAreaView>
   )

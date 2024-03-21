@@ -1,7 +1,7 @@
 import * as React from 'react'
 import  { Text, StyleSheet, View } from 'react-native'
 
-export default function CategoriaLojas({tituloCat}) {
+export default function ExibirLojas({tituloCat}) {
   return(
     <View style={styles.recContainer}>
       <Text style={styles.recText}>{tituloCat}</Text>
