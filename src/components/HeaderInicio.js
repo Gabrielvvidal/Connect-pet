@@ -1,10 +1,12 @@
-import { Text, View, Pressable, TextInput, StyleSheet } from "react-native";
+import { Text, View, Pressable, StyleSheet } from "react-native";
 import { useNavigation } from '@react-navigation/native';
 import { MaterialIcons } from '@expo/vector-icons';
 
+import BarraPesquisa from "./BarraPesquisa";
+import HeaderBtn from "./HeaderBtn"
+
 import MenuIcon from "../../assets/svg/menu.svg"
 import CarrinhoIcon from "../../assets/svg/carrinho.svg"
-import LupaIcon from "../../assets/svg/lupa.svg"
 
 export default function HeaderInicio() {
   const navigation = useNavigation()
@@ -13,27 +15,15 @@ export default function HeaderInicio() {
     <>
       <View style={styles.headerBackground}>
         <View style={styles.rowCorrection}>
-          <Pressable 
-            style={styles.Btn}
-            onPress={() => navigation.openDrawer()}
-          >
-            <MenuIcon />
-          </Pressable>
+          <HeaderBtn funcPress={() => navigation.openDrawer()}>
+            <MenuIcon/>
+          </HeaderBtn>
 
-          <View style={styles.searchContainer}>
-            <LupaIcon />
-            <TextInput
-              style={styles.searchInput}
-              placeholder="Pesquise..."
-              placeholderTextColor= "#000000"
-            />
-          </View>
+          <BarraPesquisa/>
 
-          <Pressable 
-            style={styles.Btn}
-          >
-            <CarrinhoIcon />
-          </Pressable>
+          <HeaderBtn>
+            <CarrinhoIcon/>
+          </HeaderBtn>
         </View>
 
         <View style={styles.addressContainer}>

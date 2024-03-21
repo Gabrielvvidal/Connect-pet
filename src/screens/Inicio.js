@@ -3,7 +3,7 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import { useFilterContext } from "../hooks/useFilterContext";
 
 import HeaderInicio from '../components/HeaderInicio';
-import FiltroLojas from "../components/FiltroLojas";
+import CategoriaLojas from "../components/CategoriaLojas";
 import FiltrosOrdem from "../components/FiltrosOrdem";
 import ExibirLojas from "../components/ExibirLojas";
 
@@ -13,7 +13,7 @@ export default function Inicio() {
   return(
     <SafeAreaView style={styles.container}>
       <HeaderInicio/>
-      <FiltroLojas/>
+      <CategoriaLojas/>
       <FiltrosOrdem/>
       
       {categoria === "petshop" && <ExibirLojas tituloCat="Petshops"/>}

@@ -1,6 +1,6 @@
 import { createDrawerNavigator } from "@react-navigation/drawer";
 
-import FormasLogin from "../screens/FormasLogin";
+import InicioEntrar from "../screens/InicioEntrar";
 import CustomDrawerContent from "../components/CustomDrawerContent";
 import Inicio from "../screens/Inicio";
 
@@ -37,7 +37,7 @@ export default function DrawerRoutes(){
 
       <Drawer.Screen
         name="Entrar"
-        component={FormasLogin}
+        component={InicioEntrar}
         options={{
           drawerLabel: 'Entrar',
           drawerIcon: () => <EntrarIcon style={{marginLeft: 6}}/>,

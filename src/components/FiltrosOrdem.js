@@ -1,31 +1,23 @@
 import * as React from 'react'
-import { View, Text, Pressable, StyleSheet } from 'react-native'
+import { View, StyleSheet } from 'react-native'
 import { MaterialIcons } from '@expo/vector-icons';
+
+import BotaoOrdem from './BotaoOrdem'
 
 export default function FiltrosOrdem(){
   return(
     <View style={styles.ordemContainer}>
-      <Pressable
-        style={styles.ordemBtn}
+      <BotaoOrdem
+        nomeFiltro="Ordernar"
       >
-        <Text style={styles.ordemText}>Ordenar</Text>
-
         <MaterialIcons name="keyboard-arrow-down" size={20} color="#000000" />
-      </Pressable>
+      </BotaoOrdem>
 
-      <Pressable
-        style={styles.ordemBtn}
+      <BotaoOrdem
+        nomeFiltro="Distância"
       >
-        <Text style={styles.ordemText}>Distância</Text>
-
         <MaterialIcons name="keyboard-arrow-down" size={20} color="#000000" />
-      </Pressable>
-
-      <Pressable
-        style={styles.ordemBtn}
-      >
-        <Text style={styles.ordemText}>Leva e traz</Text>
-      </Pressable>
+      </BotaoOrdem>
     </View>
   )
 }
@@ -36,28 +28,5 @@ const styles = StyleSheet.create({
     paddingLeft: 20,
     paddingTop: 10,
     paddingBottom: 10
-  },
-
-  ordemBtn: {
-    width: 85,
-    height: 25,
-    backgroundColor: '#ffffff',
-    flexDirection: 'row',
-    justifyContent: 'center',
-    alignItems: 'center',
-    borderRadius: 10,
-    marginRight: 10,
-    shadowColor: '#000000',
-    shadowOffset: { width: 1, height: 1 },
-    shadowOpacity: 0.25,
-    shadowRadius: 1,
-    elevation: 1,
-    zIndex: 99
-  },
-  
-  ordemText: {
-    fontSize: 12,
-    fontFamily: 'Inter_400Regular',
-    alignSelf: 'center'
   }
 })
