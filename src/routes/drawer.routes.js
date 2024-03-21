@@ -1,7 +1,5 @@
 import { createDrawerNavigator } from "@react-navigation/drawer";
 
-import TabRoutes from "./tab.routes";
-
 import FormasLogin from "../screens/FormasLogin";
 import CustomDrawerContent from "../components/CustomDrawerContent";
 import Inicio from "../screens/Inicio";
@@ -28,8 +26,8 @@ export default function DrawerRoutes(){
       }}
     >
       <Drawer.Screen
-        name="InicioDrawer"
-        component={TabRoutes}
+        name="Inicio"
+        component={Inicio}
         options={{
           drawerItemStyle: {
             display: "none"
@@ -38,7 +36,7 @@ export default function DrawerRoutes(){
       />
 
       <Drawer.Screen
-        name="EntrarDrawer"
+        name="Entrar"
         component={FormasLogin}
         options={{
           drawerLabel: 'Entrar',
@@ -54,7 +52,7 @@ export default function DrawerRoutes(){
       />
 
       <Drawer.Screen
-        name="AjudaDrawer"
+        name="Ajuda"
         component={Inicio}
         options={{
           drawerLabel: 'Ajuda',
@@ -69,7 +67,7 @@ export default function DrawerRoutes(){
       />
 
       <Drawer.Screen
-        name="SobreDrawer"
+        name="Sobre"
         component={Inicio}
         options={{
           drawerLabel: 'Sobre',
