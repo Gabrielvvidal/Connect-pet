@@ -1,6 +1,7 @@
 import { useCallback } from 'react';
 import { SafeAreaProvider } from "react-native-safe-area-context";
 import { StatusBar } from "react-native";
+import { FilterContextProvider } from './src/context/FilterContext';
 import { 
   useFonts, 
   Inter_400Regular, 
@@ -32,8 +33,10 @@ export default function App() {
 
   return (
     <SafeAreaProvider onLayout={onLayoutRootView}>
-     <Routes/>
-     <StatusBar backgroundColor={'#009BFF'}/>
+      <FilterContextProvider>
+        <Routes/>
+        <StatusBar backgroundColor={'#009BFF'}/>
+      </FilterContextProvider>
     </SafeAreaProvider>
   );
 }

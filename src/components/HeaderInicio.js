@@ -60,8 +60,8 @@ const styles = StyleSheet.create({
   headerElipse: {
     borderRadius: 50,
     backgroundColor: '#009bff',
-    width: 100,
-    height: 100,
+    width: 110,
+    height: 95,
     transform: [{ scaleX: 7 }],
     alignSelf: 'center',
     marginTop: -63,

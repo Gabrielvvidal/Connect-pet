@@ -1,10 +1,10 @@
 import * as React from 'react'
 import  { Text, StyleSheet, View } from 'react-native'
 
-export default function Recomendacoes() {
+export default function CategoriaLojas({tituloCat}) {
   return(
     <View style={styles.recContainer}>
-      <Text style={styles.recText}>Recomendações</Text>
+      <Text style={styles.recText}>{tituloCat}</Text>
 
       <Text style={styles.recNotFound}>Nenhum estabelecimento encontrado</Text>
     </View>

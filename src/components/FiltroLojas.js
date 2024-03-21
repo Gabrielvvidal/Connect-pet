@@ -1,44 +1,39 @@
 import * as React from "react"
-import { Text, View, StyleSheet, Image, Pressable } from "react-native"
+import { View, StyleSheet } from "react-native"
+
+import PetShopImg from "../images/petshop.png"
+import VeterinariaImg from "../images/veterinaria.png"
+import CuidadorImg from "../images/cuidadores.png"
+import HotelImg from "../images/hoteis.png"
+
+import BotaoCategoria from "./BotaoCategoria"
 
 export default function FiltroLoja() {
   return(
     <View style={styles.filtroContainer}>
-      <Pressable>
-        <Image
-          style={styles.filterImage} 
-          source={require('../images/petshop.png')}
-        />
+      <BotaoCategoria
+        nomeCat="petshop"
+        textoCat="Petshops"
+        imgCat={PetShopImg}
+      />
 
-        <Text style={styles.filterText}>Petshops</Text>
-      </Pressable>
+      <BotaoCategoria
+        nomeCat="veterinaria"
+        textoCat="Veterinárias"
+        imgCat={VeterinariaImg}
+      />
 
-      <Pressable>
-        <Image 
-          style={styles.filterImage} 
-          source={require('../images/veterinaria.png')}
-        />
+      <BotaoCategoria
+        nomeCat="cuidadores"
+        textoCat="Cuidadores"
+        imgCat={CuidadorImg}
+      />
 
-        <Text style={styles.filterText}>Veterinárias</Text>
-      </Pressable>
-
-      <Pressable>
-        <Image
-          style={styles.filterImage}  
-          source={require('../images/cuidadores.png')}
-        />
-
-        <Text style={styles.filterText}>Cuidadores</Text>
-      </Pressable>
-
-      <Pressable>
-        <Image
-          style={styles.filterImage}  
-          source={require('../images/hoteis.png')}
-        />
-
-        <Text style={styles.filterText}>Hotéis</Text>
-      </Pressable>
+      <BotaoCategoria
+        nomeCat="hoteis"
+        textoCat="Hotéis"
+        imgCat={HotelImg}
+      />
     </View>
   )
 }
@@ -54,24 +49,10 @@ const styles = StyleSheet.create({
     shadowOffset: { width: 1, height: 1 },
     shadowOpacity:  0.25,
     shadowRadius: 1,
-    elevation: 2,
+    elevation: 1,
     overflow: 'hidden',
     marginTop: -20,
     paddingTop: 20,
     gap: 20
-  },
-
-  filterImage: {
-    width: 60,
-    height: 60,
-    borderRadius: 20,
-    marginBottom: 5,
-    alignSelf: 'center'
-  },
-
-  filterText: {
-    fontSize: 12,
-    fontFamily: 'Inter_700Bold',
-    textAlign: 'center'
   }
 })

@@ -41,7 +41,7 @@ const styles = StyleSheet.create({
   ordemBtn: {
     width: 85,
     height: 25,
-    backgroundColor: '#F8F8F8',
+    backgroundColor: '#ffffff',
     flexDirection: 'row',
     justifyContent: 'center',
     alignItems: 'center',
@@ -51,7 +51,7 @@ const styles = StyleSheet.create({
     shadowOffset: { width: 1, height: 1 },
     shadowOpacity: 0.25,
     shadowRadius: 1,
-    elevation: 2,
+    elevation: 1,
     zIndex: 99
   },
   
