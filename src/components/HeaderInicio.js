@@ -1,4 +1,4 @@
-import { Text, View, Pressable, StyleSheet } from "react-native";
+import { Text, View, StyleSheet } from "react-native";
 import { useNavigation } from '@react-navigation/native';
 import { MaterialIcons } from '@expo/vector-icons';
 
@@ -58,37 +58,6 @@ const styles = StyleSheet.create({
     borderWidth: 10,
     borderColor: '#00D1FF',
     zIndex: 9
-  },
-
-  Btn: {
-    backgroundColor: '#ffffff',
-    width: 50,
-    height: 50,
-    borderRadius: 20,
-    marginTop: 20,
-    justifyContent: 'center',
-    alignItems: 'center'
-  },
-
-  searchContainer:{
-    backgroundColor: '#ffffff',
-    borderRadius: 20,
-    flexDirection: 'row',
-    height: 30,
-    alignItems: 'center',
-    marginTop: 30,
-    marginLeft: 13,
-    marginRight: 13,
-    paddingLeft: 10
-  },
-
-  searchInput: {
-    width: 190,
-    height: 30,
-    fontSize: 16,
-    fontFamily: 'Inter_400Regular',
-    paddingLeft: 5,
-    paddingRight: 10
   },
 
   rowCorrection: {
