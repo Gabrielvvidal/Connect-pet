@@ -12,7 +12,7 @@ export default function HeaderEntrar() {
 
 const styles = StyleSheet.create({
   headerBackground: {
-    height: 270,
+    height: 230,
     backgroundColor: '#009BFF',
     zIndex: 10,
     alignItems: "center"
@@ -21,9 +21,9 @@ const styles = StyleSheet.create({
   headerElipse: {
     borderRadius: 50,
     backgroundColor: '#009bff',
-    width: 100,
+    width: 115,
     height: 100,
-    transform: [{ scaleX: 7 }],
+    transform: [{ scaleX: 5 }],
     alignSelf: 'center',
     marginTop: -63,
     borderWidth: 10,
